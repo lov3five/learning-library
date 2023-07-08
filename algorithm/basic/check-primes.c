@@ -9,8 +9,12 @@ bool isPrime(int number)
         return false;
     }
 
-    // Use division check for odd numbers from 3 to the square root of 'number'
-    for (int i = 2; i * i <= number; ++i)
+    if (number == 2)
+    {
+        return true;
+    }
+
+    for (int i = 3; i <= (number - 1); i += 2)
     {
         if (number % i == 0)
         {
@@ -40,7 +44,7 @@ int main()
         switch (choice)
         {
         case 1:
-            
+
             printf("Enter the number to check: ");
             scanf("%d", &number);
 
