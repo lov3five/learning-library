@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",                        // Sử dụng hệ thống module CommonJS
+      "declaration": true,                          // Tạo các tệp khai báo dùng cho type checking
+      "removeComments": true,                       // Loại bỏ các comment trong mã được biên dịch
+      "emitDecoratorMetadata": true,                // Tạo thông tin metadata cho decorators
+      "experimentalDecorators": true,               // Bật hỗ trợ thí nghiệm cho tính năng decorators
+      "allowSyntheticDefaultImports": true,         // Cho phép sử dụng import mặc định tổng hợp (synthetic)
+      "target": "ES2021",                           // Biên dịch mã TypeScript thành phiên bản ECMAScript 2021
+      "sourceMap": true,                            // Tạo các tệp source map để hỗ trợ gỡ lỗi trong mã được biên dịch
+      "outDir": "./dist",                           // Đường dẫn thư mục đích để lưu các tệp biên dịch
+      "baseUrl": "./",                              // Đường dẫn gốc cho các import tương đối
+      "incremental": true,                          // Hỗ trợ biên dịch tăng dần (incremental compilation)
+      "skipLibCheck": true,                         // Bỏ qua kiểm tra các tệp .d.ts (định nghĩa thư viện)
+      "strictNullChecks": false,                    // Tắt kiểm tra nghiêm ngặt null
+      "noImplicitAny": false,                       // Tắt cảnh báo khi kiểu any không được xác định rõ ràng
+      "strictBindCallApply": false,                 // Tắt kiểm tra nghiêm ngặt cho các hàm bind/call/apply
+      "forceConsistentCasingInFileNames": false,     // Tắt kiểm tra đồng nhất về viết hoa/thường trong tên tệp
+      "noFallthroughCasesInSwitch": false           // Tắt cảnh báo khi không sử dụng câu lệnh break trong switch-case
+    }
+  }
+  
