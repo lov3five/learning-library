@@ -1,6 +1,6 @@
 import 'dart:io';
 
-
+enum GioiTinh { Nam, Nu }
 class Person {
   String name;
   int namSinh;
@@ -16,8 +16,6 @@ class Person {
     } else {
       print("$name chưa được nhập năm sinh!!!");
     }
-    
-
   }
   
 }
