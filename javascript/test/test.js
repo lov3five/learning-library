@@ -1,9 +1,7 @@
-const foo = () => {
-    var a = b = 2
-    a++
-    return a
-}
+const cluster = require('cluster')
+const { log, timeLog } = require('console')
+const process = require('process')
 
-console.log(foo());
-console.log(typeof a);
-console.log(typeof b);
+const numWorkers = require('os').cpus().length
+log(numWorkers);
+timeLog(numWorkers)
