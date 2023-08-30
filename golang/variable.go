@@ -14,6 +14,7 @@ func main() {
 
 	// Khai báo biến không có giá trị ban đầu
 	var address string
+	// Gán giá trị cho biến
 	address = "123 Ha Huy Giap"
 
 	fmt.Println(address)
@@ -24,4 +25,14 @@ func main() {
 	schoolName := "IUH"
 	age := 19
 	fmt.Println(age, schoolName)
+
+	/* 
+	*var*
+	1. Có thể được sử dụng bên trong và bên ngoài hàm (func)
+	2. Việc khai báo biến và gán giá trị có thể được thực hiện riêng biệt
+
+	*:=*
+	1. Chỉ có thể được sử dụng bên trong các chức năng
+	2. Việc khai báo biến và gán giá trị không thể thực hiện riêng biệt (phải thực hiện trên cùng 1 dòng)
+	*/
 }
