@@ -15,3 +15,9 @@ print(goodbye())
 // Or this may lie on 1 line
 coding = () => 'Code to fix bug ;))'
 print(coding())
+
+npm = () => {
+    const npmHello = "NPM v6.12.11";
+    print(npmHello)
+}
+npm()
