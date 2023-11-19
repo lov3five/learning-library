@@ -6,8 +6,7 @@ using namespace std;
  */
 void importArray(int *arr, int n){
     for(int i = 0; i < n; i++){
-        printf("a[%d] = ", i);
-        cout << arr+i << " ";
+        cout << "a[" << i << "](" << arr+i << ") = ";
         cin >> *(arr+i);
     }
 }

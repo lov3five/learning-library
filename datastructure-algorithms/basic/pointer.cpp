@@ -2,18 +2,25 @@
 
 int main() {
     
-    int b = 10;
-    int arr[5] = {1,2,3,4,5};
-    int a = 11;
+    int number = 10;
 
-    printf("a = %d\n", (void*)&a); 
-    printf("====================");
+    int *p; // Khai báo con trỏ p, p là biến lưu trữ địa chỉ của biến khác
+    p = &number;
 
-    printf("\nb = %d\n", (void*)&b);    
-    printf("====================\n");
+    printf("&p = %d", &p);
+    printf("\n&number = %d", &number);
 
-    for(int i = 0; i < 5; i++) {
-        printf("arr[%d] = %d\n", i, (void*)&arr[i]);
-    }
-    return 0;
+    printf("\n\nOutput: %d", p);
+    printf("\nOutput: %d", *p);
+
+    int **p1 = &p; // Trỏ trỏ
+    printf("\n\nOutput: %d", p1); // p1 = Địa chỉ bộ nhớ của biến p == &p
+    printf("\nOutput: %d", *p1); // = Giá trị của p == địa chỉ của number == &number
+    printf("\nOutput: %d", **p1); // = Giá trị của number == number == 10
+
+    int ***p2 = &p1; // Trỏ trỏ trỏ
+    printf("\n\nOutput: %d", p2); // = Địa chỉ của p1 == &p1
+    printf("\nOutput: %d", *p2); // = Giá trị của p1 == &p
+    printf("\nOutput: %d", **p2); // = Giá trị của p == &number
+    printf("\nOutput: %d", ***p2); // = Giá trị của number == number == 10
 }
