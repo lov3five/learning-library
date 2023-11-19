@@ -19,8 +19,8 @@ int main() {
     printf("\nOutput: %d", **p1); // = Giá trị của number == number == 10
 
     int ***p2 = &p1; // Trỏ trỏ trỏ
-    printf("\n\nOutput: %d", p2); // = Địa chỉ của p1 == &p1
-    printf("\nOutput: %d", *p2); // = Giá trị của p1 == &p
-    printf("\nOutput: %d", **p2); // = Giá trị của p == &number
-    printf("\nOutput: %d", ***p2); // = Giá trị của number == number == 10
+    printf("\n\nOutput: %d = %d", p2, &p1); // = Địa chỉ của p1 == &p1
+    printf("\nOutput: %d = %d", *p2, p1); // = Giá trị của p1 == &p
+    printf("\nOutput: %d = %d", **p2, p); // = Giá trị của p == &number
+    printf("\nOutput: %d = %d", ***p2, number); // = Giá trị của number == number == 10
 }
